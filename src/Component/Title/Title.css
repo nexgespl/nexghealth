@@ -1,0 +1,29 @@
+.title{
+     text-align: center;
+     width: 100%;
+     box-sizing: border-box;
+     background-color: #f4f8ff; 
+     margin: 80px auto;
+     align-items: center;
+     justify-content: space-between;
+
+}
+
+.title h1{
+    font-size: 60px;
+    font-weight: 800px;
+}
+
+.title p{
+    /* width: 100%;
+    margin: 10px auto 20px;
+    line-height: 1.4 ; */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+   
+    
+}

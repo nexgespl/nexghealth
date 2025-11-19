@@ -1,0 +1,100 @@
+/* .programm{
+    margin: 80px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+
+.programms img{
+    width: 100%;
+    border-radius: 10px ;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.programms{
+    flex-basis: 31%;
+} */
+
+.programm {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  text-align: center;
+  padding: 40px 80px;
+  background: #fff;
+}
+
+.programms {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+}
+
+.programms img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  /* filter: invert(38%) sepia(80%) saturate(537%) hue-rotate(176deg) brightness(93%) contrast(90%); */
+}
+
+.programms h4 {
+  font-size: 1rem;
+  color: #2f6eb5; /* Blue tone similar to your icons */
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.programms:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.programm {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.programms img {
+  transition: transform 0.3s ease;
+}
+
+.programms:hover img {
+  transform: scale(1.1);
+}
+
+
+.title{
+     text-align: center;
+     width: 100%;
+     box-sizing: border-box;
+     background-color: #f4f8ff; 
+     margin: 80px auto;
+     align-items: center;
+     justify-content: space-between;
+
+}
+
+.title h1{
+    font-size: 60px;
+    font-weight: 800px;
+}
+
+.title p{
+    /* width: 100%;
+    margin: 10px auto 20px;
+    line-height: 1.4 ; */
+    display: block;
+    font-size: larger;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+   
+    
+}
