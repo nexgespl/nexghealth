@@ -1,17 +1,18 @@
 import React from "react";
 import "./Navbar.css";
-import logo1 from '../../assets/logo1.png'
+import { Link } from "react-router-dom";
+import logo1 from "../../assets/logo1.png";
 import { FaUserCircle, FaSearch, FaBars, FaThLarge } from "react-icons/fa"; // 🔹 All icons imported
 
 const Navbar = () => {
   return (
     <nav className="container">
+      <Link to="/">
+        <img src={logo1} alt="Nex-G Logo" className="footer-logo1" />
+      </Link>
 
-                  <img src={logo1} alt="Nex-G Logo" className="footer-logo1" />
-                    {/* <h1>Nex-G Health</h1> */}
+      {/* <h1>Nex-G Health</h1> */}
 
-
-            
       {/* <h1 className="Logo">Nex-G Health</h1> */}
 
       <ul>
@@ -37,7 +38,9 @@ const Navbar = () => {
 
         {/* Button */}
         <li>
-          <button className="btn">Contact Us</button>
+          <Link to="/contact">
+            <button className="btn">Contact Us</button>
+          </Link>
         </li>
       </ul>
     </nav>
@@ -45,7 +48,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
 
 // hfdjhfkjfhdfcnkjcnknn

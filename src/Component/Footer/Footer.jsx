@@ -56,28 +56,40 @@
 // export default Footer;
 
 import React from "react";
-import logo1 from '../../assets/logo1.png'
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import logo1 from "../../assets/logo1.png";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-
         {/* LEFT SECTION */}
         <div className="footer-left">
           <div className="logo">
-          <img src={logo1} alt="Nex-G Logo" className="footer-logo" />
+            <img src={logo1} alt="Nex-G Logo" className="footer-logo" />
             <h2>Nex-G Health</h2>
           </div>
           <p className="tagline">Excellence Redefined</p>
 
           <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedinIn /></a>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaTwitter />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="#">
+              <FaLinkedinIn />
+            </a>
           </div>
 
           <p className="privacy">Privacy Policy</p>
@@ -87,14 +99,20 @@ const Footer = () => {
         <div className="footer-middle">
           <h3>Useful Links</h3>
           <ul>
-
-            
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
             {/* <li><a href="#">How we do</a></li> */}
-            <li><a href="#">Services</a></li>
+            <li>
+              <a href="#">Services</a>
+            </li>
             {/* <li><a href="#">Clients</a></li> */}
-            <li><a href="#">Contact Us</a></li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
           </ul>
         </div>
 
@@ -103,21 +121,39 @@ const Footer = () => {
           <h3>Contact</h3>
 
           <div className="contact-info">
-            <p><strong>Phone: +91 882-690-0551</strong><br />            
-            <br /></p>
+            <p>
+              <strong>Phone: +91 882-690-0551</strong>
+              <br />
+              <br />
+            </p>
             {/* <p><strong>FAX:</strong><br />+1 307-288-6459</p> */}
-            <p><strong>Email: info@nexg.in</strong><br /><br /></p>
-            <p><strong>Address: Nex-G Solutions LLC <br />30 N Gould ST STE R <br />Sheridan WY, 82801 </strong><br /><br /><br /></p>
+            <p>
+              <strong>Email: info@nexg.in</strong>
+              <br />
+              <br />
+            </p>
+            <p>
+              <strong>
+                Address: Nex-G Solutions Pvt. Ltd. <br />
+                C-28 , Sector-65, Noida,
+                <br />
+                Gautam Budh Nagar, Uttar Pradesh,
+                <br />
+                New Delhi Capital Region, INDIA Postal Code - 201301{" "}
+              </strong>
+              <br />
+              <br />
+              <br />
+            </p>
           </div>
 
           {/* <div className="contact-info">
             <p><strong>Phone:</strong><br />+91 882-690-0551            
             <br />+91 882-690-0556</p> */}
-            {/* <p><strong>FAX:</strong><br />+1 307-288-6459</p> */}
-            {/* <p><strong>Email: info@nexg.in</strong><br />info@nexg.in</p>
+          {/* <p><strong>FAX:</strong><br />+1 307-288-6459</p> */}
+          {/* <p><strong>Email: info@nexg.in</strong><br />info@nexg.in</p>
             <p><strong>Address:</strong><br />Nex-G Solutions LLC<br />30 N Gould ST STE R<br />Sheridan WY, 82801</p>
           </div> */}
-          
         </div>
       </div>
     </footer>
