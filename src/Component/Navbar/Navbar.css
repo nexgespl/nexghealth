@@ -55,7 +55,7 @@ nav ul li{
 } */
 
 /* Nav List */
-ul {
+.ul {
   display: flex;
   align-items: center;
   gap: 30px;

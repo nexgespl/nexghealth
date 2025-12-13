@@ -15,7 +15,7 @@ const Navbar = () => {
 
       {/* <h1 className="Logo">Nex-G Health</h1> */}
 
-      <ul>
+      <ul className="ul">
         {/* Profile Icon */}
         <li className="icon-btn">
           <FaUserCircle className="nav-icon" title="Profile" />

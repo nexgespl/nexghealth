@@ -15,6 +15,7 @@ import InsuranceVerification from "./Component/SubComponent/InsuranceVerificatio
 import HealthCareClaimsAdj from "./Component/SubComponent/HealthcareClaimsAdj/HealthcareClaimAdj";
 import InsuranceElig from "./Component/SubComponent/InsuranceElig/InsuranceElig";
 import MedicalTranscription from "./Component/SubComponent/MedicalTranscription/MedicalTranscription";
+import MedicalBillingServices from "./Component/SubComponent/MedicalBillingServices/MedicalBillingServices";
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
         />
 
         {/* Sub-Pages */}
-        <Route path="/medical-billing" element={<MedicalBillingCodding />} />
+        <Route path="/coding" element={<MedicalBillingCodding />} />
 
         <Route path="/empanelment" element={<MedicalEmpanelment />} />
 
@@ -46,6 +47,8 @@ function App() {
           path="/insurance-verification"
           element={<InsuranceVerification />}
         />
+
+        <Route path="/medical-billing" element={<MedicalBillingServices />} />
 
         <Route path="/rcm" element={<RevenueCycle />} />
 
