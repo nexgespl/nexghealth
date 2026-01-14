@@ -1,0 +1,170 @@
+/* .auth-overlay {
+  position: fixed;
+  inset: 0; */
+/* background: linear-gradient(135deg, #b24592, #1e5bff); */
+/* background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.auth-card {
+  background: #fff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 6px;
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+  font-weight: 600;
+}
+
+.tab-buttons .active {
+  background: linear-gradient(135deg, #b24592, #1e5bff);
+  color: white;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 13px;
+  color: #1e5bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #b24592, #1e5bff);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.switch {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.switch span {
+  color: #1e5bff;
+  cursor: pointer;
+  font-weight: 600;
+} */
+
+/* ************************************************************************ */
+
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b24592, #1e5bff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: #fff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab-buttons .active {
+  background: linear-gradient(135deg, #b24592, #1e5bff);
+  color: white;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 13px;
+  color: #1e5bff;
+  cursor: pointer;
+}
+
+.main-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #b24592, #1e5bff);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.switch {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.switch span {
+  color: #1e5bff;
+  cursor: pointer;
+  font-weight: 600;
+}

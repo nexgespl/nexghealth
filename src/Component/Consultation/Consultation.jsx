@@ -46,7 +46,7 @@ const Consultation = () => {
 
           <div className="contact-info">
             <p>
-              <FaPhoneAlt className="icon" /> +91 882-690-0551
+              <FaPhoneAlt className="icon" /> +1 510-516-4656
             </p>
             <p>
               <FaEnvelope className="icon" /> info@nexg.in
@@ -68,6 +68,15 @@ const Consultation = () => {
               required
             />
 
+            {/* <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            /> */}
+
             <input
               type="email"
               name="email"
@@ -77,12 +86,33 @@ const Consultation = () => {
               required
             />
 
-            <input
+            {formData.email &&
+              !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) && (
+                <p style={{ color: "red" }}>
+                  Please enter a valid email address
+                </p>
+              )}
+
+            {/* <input
               type="tel"
               name="phone"
               placeholder="Phone Number"
               value={formData.phone}
               onChange={handleChange}
+              required
+            /> */}
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              value={formData.phone}
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, ""); // sirf numbers
+                if (value.length <= 10) {
+                  setFormData({ ...formData, phone: value });
+                }
+              }}
               required
             />
 

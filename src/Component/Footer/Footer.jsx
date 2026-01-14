@@ -122,7 +122,7 @@ const Footer = () => {
 
           <div className="contact-info">
             <p>
-              <strong>Phone: +91 882-690-0551</strong>
+              <strong>Phone: +1 510-516-4656</strong>
               <br />
               <br />
             </p>
