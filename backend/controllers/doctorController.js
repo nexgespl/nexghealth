@@ -79,7 +79,7 @@ const jwt = require("jsonwebtoken");
 exports.loginDoctor = (req, res) => {
   const { email, password } = req.body;
 
-  const sql = "SELECT * FROM doctors WHERE email = ?";
+  const sql = "SELECT * FROM nexghealth_doctors WHERE email = ?";
   db.query(sql, [email], async (err, result) => {
     if (err) return res.status(500).json({ message: "Server error" });
 
