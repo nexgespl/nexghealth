@@ -19,7 +19,7 @@ const LoginPage = () => {
         {
           emailOrPhone, // ⚠️ backend email expect karta hai
           password,
-        }
+        },
       );
 
       // ✅ REAL JWT SAVE

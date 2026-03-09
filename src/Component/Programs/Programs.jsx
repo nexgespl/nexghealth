@@ -8,17 +8,17 @@ function Heading({ children, className }) {
 const Programs = () => {
   return (
     <div className="Programs">
-      <Heading>Welcome to Nex-G Health</Heading>
+      <Heading>Welcome to NexG Health USA LLC</Heading>
       <p>
-        Nex-G Health (a division of Nex-G Exuberant Solutions Pvt. Ltd.) is a
-        prominent revenue cycle management (RCM) service provider that helps
-        healthcare organizations optimize their financial performance.
+        NexG Health USA LLC (a division of Nex-G Exuberant Solutions Pvt. Ltd.)
+        is a prominent revenue cycle management (RCM) service provider that
+        helps healthcare organizations optimize their financial performance.
         <br />
         <br />
         By offering a comprehensive suite of RCM services — including patient
         demographics and claims entry, payment posting, denial management, and
-        accounts receivable (A/R) follow-up — Nex-G Health streamlines the
-        billing lifecycle to improve cash flow and reduce revenue leakage.
+        accounts receivable (A/R) follow-up — NexG Health USA LLC streamlines
+        the billing lifecycle to improve cash flow and reduce revenue leakage.
         <br />
         <br />
         With a strong team of certified coders and domain experts, they also
@@ -33,7 +33,7 @@ const Programs = () => {
         compliance.
         <br />
         <br />
-        Nex-G Health continues to leverage innovation, technology, and a
+        NexG Health USA LLC continues to leverage innovation, technology, and a
         single-source model to provide end-to-end RCM and IT solutions for
         healthcare providers.
         <br />

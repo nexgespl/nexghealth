@@ -58,10 +58,10 @@
 const mysql = require("mysql2");
 
 const db = mysql.createConnection({
-  host: "p3nlmysql163plsk.secureserver.net:3306",
-  user: "adarsh",
-  password: "nexg@2015*",
-  database: "nexg",
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "mydatabase",
 });
 
 db.connect((err) => {
@@ -73,4 +73,3 @@ db.connect((err) => {
 });
 
 module.exports = db;
-

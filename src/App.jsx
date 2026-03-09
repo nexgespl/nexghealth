@@ -227,7 +227,7 @@ function App() {
           }
         />
         <Route
-          path="/doctor/credentialing"
+          path="/doctor/CredentialingRequest"
           element={
             <ProtectedRoute>
               <CredentialingRequest />

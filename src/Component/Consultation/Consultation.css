@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .consultation-container {
@@ -28,6 +28,7 @@
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 15px;
+  color: white;
 }
 
 .consultation-left p {
@@ -115,7 +116,8 @@
     align-items: center;
   }
 
-  .consultation-left, .consultation-form {
+  .consultation-left,
+  .consultation-form {
     width: 100%;
   }
 }

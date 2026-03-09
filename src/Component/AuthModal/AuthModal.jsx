@@ -195,8 +195,8 @@ function AuthModal({ defaultTab = "login" }) {
           {tab === "login"
             ? "Provider Login"
             : tab === "signup"
-            ? "Provider Signup"
-            : "Forgot Password"}
+              ? "Provider Signup"
+              : "Forgot Password"}
         </h2>
 
         {/* Tabs */}
@@ -261,11 +261,11 @@ const Login = ({ changeTab }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/doctor/login",
+        "http://localhost:3001/api/doctor/login",
         {
           emailOrPhone,
           password,
-        }
+        },
       );
 
       localStorage.setItem("doctorToken", response.data.token);
@@ -437,20 +437,20 @@ const Signup = ({ changeTab }) => {
 
     if (!strongPasswordRegex.test(password)) {
       setError(
-        "Password must be 8+ chars with Uppercase, Lowercase, Number & Special char"
+        "Password must be 8+ chars with Uppercase, Lowercase, Number & Special char",
       );
       return;
     }
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/doctor/signup",
+        "http://localhost:3001/api/doctor/signup",
         {
           name,
           email,
           phone,
           password,
-        }
+        },
       );
 
       localStorage.setItem("doctorToken", response.data.token);
