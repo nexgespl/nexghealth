@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="footer-left">
           <div className="logo">
             <img src={logo1} alt="Nex-G Logo" className="footer-logo" />
-            <h2>Nex-G Health</h2>
+            <h2>NexG Health USA LLC</h2>
           </div>
           <p className="tagline">Excellence Redefined</p>
 
@@ -122,7 +122,7 @@ const Footer = () => {
 
           <div className="contact-info">
             <p>
-              <strong>Phone: +1 510-516-4656</strong>
+              <strong>Phone: +1 205 609 9829</strong>
               <br />
               <br />
             </p>
@@ -134,12 +134,13 @@ const Footer = () => {
             </p>
             <p>
               <strong>
-                Address: Nex-G Solutions Pvt. Ltd. <br />
+                16192 Coastal Highway, Lewes, Delaware 19958
+                {/* Address: Nex-G Solutions Pvt. Ltd. <br />
                 C-28 , Sector-65, Noida,
                 <br />
                 Gautam Budh Nagar, Uttar Pradesh,
                 <br />
-                New Delhi Capital Region, INDIA Postal Code - 201301{" "}
+                New Delhi Capital Region, INDIA Postal Code - 201301{" "} */}
               </strong>
               <br />
               <br />
