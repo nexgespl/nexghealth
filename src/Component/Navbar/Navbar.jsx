@@ -1,168 +1,123 @@
-// import React from "react";
-// import "./Navbar.css";
-// import { Link } from "react-router-dom";
-// import logo1 from "../../assets/logo1.png";
-// import { FaUserCircle, FaSearch, FaBars, FaThLarge } from "react-icons/fa"; // 🔹 All icons imported
-
-// const Navbar = () => {
-//   return (
-//     <nav className="container">
-//       <Link to="/">
-//         <img src={logo1} alt="Nex-G Logo" className="footer-logo1" />
-//       </Link>
-
-//       {/* <h1>Nex-G Health</h1> */}
-
-//       {/* <h1 className="Logo">Nex-G Health</h1> */}
-
-//       <ul className="ul">
-//         {/* Profile Icon */}
-//         <li className="icon-btn">
-//           <FaUserCircle className="nav-icon" title="Profile" />
-//         </li>
-
-//         {/* Search Icon */}
-//         <li className="icon-btn">
-//           <FaSearch className="nav-icon" title="Search" />
-//         </li>
-
-//         {/* Bar Icon */}
-//         <li className="icon-btn">
-//           <FaBars className="nav-icon" title="Menu Bar" />
-//         </li>
-
-//         {/* Section Icon */}
-//         <li className="icon-btn">
-//           <FaThLarge className="nav-icon" title="Sections" />
-//         </li>
-
-//         {/* Button */}
-//         <li>
-//           <Link to="/contact">
-//             <button className="btn">Contact Us</button>
-//           </Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-//******************************************************************* */
-// popup section
-
-// import React from "react";
-// import "./Navbar.css";
-// import { Link } from "react-router-dom";
-// import logo1 from "../../assets/logo1.png";
-// import { FaUserCircle, FaSearch, FaBars, FaThLarge } from "react-icons/fa";
-
-// const Navbar = ({ openAuthModal }) => {
-//   return (
-//     <nav className="container">
-//       <Link to="/">
-//         <img src={logo1} alt="Nex-G Logo" className="footer-logo1" />
-//       </Link>
-
-//       <ul className="ul">
-//         {/* Profile Icon (OPEN AUTH MODAL) */}
-//         <li className="icon-btn" onClick={openAuthModal}>
-//           <FaUserCircle className="nav-icon" title="Profile / Login" />
-//         </li>
-
-//         {/* Search Icon */}
-//         <li className="icon-btn">
-//           <Link to="/Search">
-//             <FaSearch className="nav-icon" title="Search" />
-//           </Link>
-//         </li>
-
-//         {/* Bar Icon */}
-//         <li className="icon-btn">
-//           <Link to="/Menu Bar">
-//             <FaBars className="nav-icon" title="Menu Bar" />
-//           </Link>
-//         </li>
-
-//         {/* Section Icon */}
-//         <li className="icon-btn">
-//           <Link to="/Sections">
-//             <FaThLarge className="nav-icon" title="Sections" />
-//           </Link>
-//         </li>
-
-//         {/* Contact Button */}
-//         <li>
-//           <Link to="/contact">
-//             <button className="btn">Contact Us</button>
-//           </Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-// **********************************************
-
 import React from "react";
-import "./Navbar.css";
-import { Link, useNavigate } from "react-router-dom";
-import logo1 from "../../assets/logo1.png";
-import { FaUserCircle, FaSearch, FaBars, FaThLarge } from "react-icons/fa";
+
+import {
+  Search,
+  Play,
+  ArrowRight,
+  ChevronDown,
+  CheckCircle2,
+  FileText,
+  BarChart3,
+  Users,
+  ShieldAlert,
+  FileCheck2,
+  Star,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Mail,
+} from "lucide-react";
 
 const Navbar = () => {
-  const navigate = useNavigate();
-
-  const handleProfileClick = () => {
-    navigate("/login"); // ✅ SAFE
-  };
-
   return (
-    <nav className="container">
-      {/* Logo */}
-      <Link to="/">
-        <img src={logo1} alt="Nex-G Logo" className="footer-logo1" />
-      </Link>
+    <nav className="flex items-center justify-between px-8 py-4 bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+      <div className="flex items-center gap-2">
+        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+          N
+        </div>
+        <span className="text-xl font-bold">NexGHealth</span>
+      </div>
 
-      <ul className="ul">
-        {/* 👤 Profile / Login (NEW PAGE) */}
-        <li className="icon-btn" onClick={() => navigate("/login")}>
-          <FaUserCircle className="nav-icon" title="Doctor Login" />
-        </li>
+      <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
+        {[
+          "Platform",
+          "Solutions",
+          "Services",
+          "Resources",
+          "Pricing",
+          "Company",
+        ].map((item) => (
+          <div
+            key={item}
+            className="flex items-center gap-1 cursor-pointer hover:text-blue-600 transition-colors"
+          >
+            {item} <ChevronDown className="w-4 h-4" />
+          </div>
+        ))}
+      </div>
 
-        {/* 🔍 Search */}
-        <li className="icon-btn">
-          <Link to="/search">
-            <FaSearch className="nav-icon" title="Search" />
-          </Link>
-        </li>
-
-        {/* ☰ Menu */}
-        <li className="icon-btn">
-          <Link to="/menu">
-            <FaBars className="nav-icon" title="Menu Bar" />
-          </Link>
-        </li>
-
-        {/* ⬛ Sections */}
-        <li className="icon-btn">
-          <Link to="/sections">
-            <FaThLarge className="nav-icon" title="Sections" />
-          </Link>
-        </li>
-
-        {/* 📞 Contact */}
-        <li>
-          <Link to="/contact">
-            <button className="btn">Contact Us</button>
-          </Link>
-        </li>
-      </ul>
+      <div className="flex items-center gap-4">
+        <button className="text-slate-600 hover:text-blue-600">
+          <Search className="w-5 h-5" />
+        </button>
+        <button className="bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-colors">
+          Request a Demo
+        </button>
+      </div>
     </nav>
   );
 };
 
 export default Navbar;
+
+// **********************************************
+
+// import React from "react";
+// import "./Navbar.css";
+// import { Link, useNavigate } from "react-router-dom";
+// import logo1 from "../../assets/logo1.png";
+// import { FaUserCircle, FaSearch, FaBars, FaThLarge } from "react-icons/fa";
+
+// const Navbar = () => {
+//   const navigate = useNavigate();
+
+//   const handleProfileClick = () => {
+//     navigate("/login"); // ✅ SAFE
+//   };
+
+//   return (
+//     <nav className="container">
+//       {/* Logo */}
+//       <Link to="/">
+//         <img src={logo1} alt="Nex-G Logo" className="footer-logo1" />
+//       </Link>
+
+//       <ul className="ul">
+//         {/* 👤 Profile / Login (NEW PAGE) */}
+//         <li className="icon-btn" onClick={() => navigate("/login")}>
+//           <FaUserCircle className="nav-icon" title="Doctor Login" />
+//         </li>
+
+//         {/* 🔍 Search */}
+//         <li className="icon-btn">
+//           <Link to="/search">
+//             <FaSearch className="nav-icon" title="Search" />
+//           </Link>
+//         </li>
+
+//         {/* ☰ Menu */}
+//         <li className="icon-btn">
+//           <Link to="/menu">
+//             <FaBars className="nav-icon" title="Menu Bar" />
+//           </Link>
+//         </li>
+
+//         {/* ⬛ Sections */}
+//         <li className="icon-btn">
+//           <Link to="/sections">
+//             <FaThLarge className="nav-icon" title="Sections" />
+//           </Link>
+//         </li>
+
+//         {/* 📞 Contact */}
+//         <li>
+//           <Link to="/contact">
+//             <button className="btn">Contact Us</button>
+//           </Link>
+//         </li>
+//       </ul>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;

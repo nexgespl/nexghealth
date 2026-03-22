@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   width: 100%;
   min-height: 100vh;
   background:
@@ -28,4 +28,527 @@
   max-width: 700px;
   margin: 10px auto 20px;
   line-height: 1.4;
+} */
+
+/* -------------------------------------------- */
+/* body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fb;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+/* LEFT */
+/* .hero-left {
+  width: 50%;
+}
+
+.badge {
+  background: #e6f0ff;
+  color: #2563eb;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #2563eb, #06b6d4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-left p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stats h2 {
+  color: #2563eb;
+  margin: 0;
+}
+
+.stats span {
+  font-size: 14px;
+  color: #666;
+} */
+
+/* RIGHT */
+/* .hero-right {
+  position: relative;
+}
+
+.dashboard {
+  width: 420px;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 10px;
+  border-radius: 10px;
+  flex: 1;
+  font-size: 12px;
+}
+
+.chart {
+  margin: 20px 0;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.chart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.claims p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.claim {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.green {
+  color: #22c55e;
+}
+.blue {
+  color: #38bdf8;
+}
+.yellow {
+  color: #facc15;
+} */
+
+/* FLOATING BADGES  */
+/* .floating {
+  position: absolute;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.f1 {
+  top: -20px;
+  right: -20px;
+}
+.f2 {
+  top: 120px;
+  right: -30px;
+}
+.f3 {
+  bottom: -20px;
+  left: 20px;
+} */
+
+/* ------------------------------------ */
+/* Base Container Settings */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: radial-gradient(
+    circle at 80% 30%,
+    #e0f2fe 0%,
+    #f8fafc 40%,
+    #ffffff 100%
+  );
+  min-height: 100vh;
+}
+
+/* Left Content Layout */
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  padding-right: 2rem;
+}
+
+/* Top Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e0f2fe;
+  color: #3b82f6;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Main Heading */
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-title .text-blue {
+  color: #3b82f6;
+}
+
+.hero-title .text-dark {
+  color: #0f172a;
+}
+
+/* Description Text */
+.hero-description {
+  font-size: 1.125rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+/* Call to Action Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  padding: 0.875rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+}
+
+/* Statistics Section */
+.hero-stats {
+  display: flex;
+  gap: 3rem;
+}
+
+.stat-item h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin: 0 0 0.25rem 0;
+}
+
+.stat-item p {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Right Image Area (Enhanced) */
+.hero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  overflow: visible;
+}
+
+/* Base style for dynamic floating cards */
+.dynamic-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  font-family: inherit;
+  white-space: nowrap;
+  opacity: 0.9;
+  z-index: 10; /* FIX: Added z-index so cards stay on top */
+
+  /* Initial floating animation */
+  animation: floatUpAndDown 6s ease-in-out infinite;
+  animation-delay: calc(var(--order) * 1s);
+}
+
+.dynamic-card h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.dynamic-card p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.dynamic-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+/* Positioning specific dynamic cards relative to dashboard */
+#claims-approved {
+  top: 5%;
+  right: 15%;
+  --order: 0;
+}
+
+#claims-processed {
+  top: 30%;
+  left: -20%;
+  --order: 1.5;
+}
+
+#denial-rate {
+  bottom: 5%;
+  right: 15%;
+  --order: 3;
+}
+
+#recovered-denials {
+  bottom: 25%;
+  right: -25%;
+  --order: 4.5;
+}
+
+/* Basic floating animation keyframe */
+@keyframes floatUpAndDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Main Dashboard Image with enhanced depth and glow */
+.dashboard-image {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 25px 60px rgba(59, 130, 246, 0.25));
+  transform: perspective(1000px) rotateY(-5deg);
+  position: relative;
+  z-index: 0;
+}
+
+#claims-approved {
+  top: 10%; /* Widespread position near top */
+  right: 60%; /* Pushed left relative to dashboard */
+  --order: 0;
+}
+
+#claims-processed {
+  top: 50%; /* Center-aligned vertically */
+  left: 10%; /* Farthest left position on screen */
+  --order: 1.5;
+}
+
+#denial-rate {
+  bottom: 10%; /* Widespread position near bottom */
+  right: 15%; /* Closer to right side */
+  --order: 3;
+}
+
+#recovered-denials {
+  bottom: 40%; /* Mid-bottom vertical position */
+  right: 5%; /* Farthest right position on screen */
+  --order: 4.5;
+}
+
+/* Optional: Adding basic data motion animation behind image */
+.hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background:
+    linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent) 0%
+      0% / 200% 100%,
+    linear-gradient(transparent, rgba(59, 130, 246, 0.2), transparent) 0% 0% /
+      100% 200%;
+  filter: blur(15px);
+  opacity: 0.6;
+  border-radius: 20px;
+  z-index: -1;
+  animation: backgroundDataFlow 8s linear infinite;
+}
+
+@keyframes backgroundDataFlow {
+  0% {
+    background-position:
+      0% 0%,
+      0% 0%;
+  }
+  100% {
+    background-position:
+      200% 100%,
+      100% 200%;
+  }
+}
+
+/* Mobile Responsiveness (FIXED) */
+@media (max-width: 992px) {
+  /* FIX: Added missing mobile layout properties for parent container */
+  .hero-container {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+
+  /* FIX: Added missing mobile layout properties for left content */
+  .hero-content {
+    padding-right: 0;
+    max-width: 100%;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  /* FIX: Combined duplicate .hero-image-wrapper rules */
+  .hero-image-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    overflow: visible;
+  }
+
+  .dynamic-card {
+    position: relative;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    animation: none !important;
+    max-width: fit-content;
+  }
+
+  .dashboard-image {
+    width: 80%;
+    margin-top: 1rem;
+    transform: none;
+  }
 }

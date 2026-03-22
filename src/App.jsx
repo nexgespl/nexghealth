@@ -155,8 +155,9 @@ import Hero from "./Component/Hero/Hero";
 import Programs from "./Component/Programs/Programs";
 import Programm from "./Component/Programm/Programm";
 import Footer from "./Component/Footer/Footer";
-import Copyright from "./Component/Copyright";
+// import Copyright from "./Component/Copyright";
 import Consultation from "./Component/Consultation/Consultation";
+import Testimonialsection from "./Component/TestimonialSection/Testimonialsection";
 
 // Sub Components
 import MedicalBillingCodding from "./Component/SubComponent/MedicalBillingCodding/MedicalBillingCodding";
@@ -191,6 +192,7 @@ function App() {
               <Hero />
               <Programs />
               <Programm />
+              <Testimonialsection />
               <Consultation />
             </>
           }
@@ -238,7 +240,7 @@ function App() {
 
       {/* Footer always visible */}
       <Footer />
-      <Copyright />
+      {/* <Copyright /> */}
     </>
   );
 }

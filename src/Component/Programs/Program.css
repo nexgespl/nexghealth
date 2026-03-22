@@ -13,7 +13,7 @@
 
 .Programs h1 {
   font-size: 4rem;
-  font-weight: 800;
+  /* font-weight: 800; */
   color: #191b1c;
 }
 
@@ -21,7 +21,8 @@
   /* width: 100%;
     margin: 10px auto 20px;
     line-height: 1.4 ; */
-  color: #767676;
+  /* color: #767676; */
+  color: #000000;
   font-size: larger;
   display: block;
   margin-block-start: 1em;
