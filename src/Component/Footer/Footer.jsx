@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo.png";
 import {
   Search,
   Play,
@@ -23,10 +24,18 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         <div className="space-y-6">
           <div className="flex items-center gap-2 text-white">
-            <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center font-bold">
+            {/* <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center font-bold">
               N
+            </div> */}
+            <div className="flex items-center gap-3">
+              {/* ✅ FIXED LOGO SIZE */}
+              <img
+                src={logo}
+                alt="Nex-G Logo"
+                className="h-10 w-auto object-contain"
+              />
             </div>
-            <span className="text-xl font-bold">NexGHealth</span>
+            -<span className="text-xl font-bold">NexGHealth</span>
           </div>
           <p className="text-slate-400 text-sm">
             AI-powered Revenue Cycle Management for modern healthcare

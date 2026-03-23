@@ -1,4 +1,6 @@
 import React from "react";
+// import { Link, useNavigate } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 import {
   Search,
@@ -21,10 +23,22 @@ import {
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-8 py-4 bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
-      <div className="flex items-center gap-2">
+      {/* <div className="flex items-center gap-2">
         <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-          N
+          <img src={logo} alt="Nex-G Logo" />
         </div>
+
+        <span className="text-xl font-bold">NexGHealth</span>
+      </div> */}
+
+      <div className="flex items-center gap-3">
+        {/* ✅ FIXED LOGO SIZE */}
+        <img
+          src={logo}
+          alt="Nex-G Logo"
+          className="h-10 w-auto object-contain"
+        />
+
         <span className="text-xl font-bold">NexGHealth</span>
       </div>
 
