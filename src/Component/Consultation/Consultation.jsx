@@ -171,22 +171,39 @@ const Consultation = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    organization: "",
-    message: "",
+    phone: "",
+    service: "",
   });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async () => {
+  // ✅ FIXED SUBMIT
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
     try {
-      await axios.post("http://localhost:5000/api/form", formData);
-      alert("Form submitted successfully ✅");
-    } catch (error) {
+      await axios.post(
+        "http://localhost:3001/api/saveConsultation", // ✅ correct port
+        formData,
+      );
+
+      alert("Form Submitted Successfully ✅");
+
+      // reset form
+      setFormData({
+        fullname: "",
+        email: "",
+        phone: "",
+        service: "",
+      });
+    } catch (err) {
+      console.error(err);
       alert("Error submitting form ❌");
     }
   };
+
   return (
     <section className="py-24 px-8 max-w-7xl mx-auto">
       <div className="bg-[#0f172a] rounded-3xl overflow-hidden shadow-2xl relative">
@@ -229,7 +246,7 @@ const Consultation = () => {
 
           {/* Right Form */}
           <div className="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-2 gap-5">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-300">
@@ -240,6 +257,7 @@ const Consultation = () => {
                     name="name"
                     placeholder="Dr. Sarah Mitchell"
                     onChange={handleChange}
+                    value={formData.fullname}
                     className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition"
                   />
                 </div>
@@ -252,37 +270,79 @@ const Consultation = () => {
                     name="email"
                     placeholder="sarah@hospital.org"
                     onChange={handleChange}
+                    value={formData.email}
+                    required
                     className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition"
                   />
+                  {formData.email &&
+                    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) && (
+                      <p style={{ color: "red" }}>
+                        Please enter a valid email address
+                      </p>
+                    )}
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-medium text-slate-300">
-                  Organization
+                  Phone Number
                 </label>
                 <input
-                  type="text"
-                  name="organization"
-                  placeholder="Ascension Health"
-                  onChange={handleChange}
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/\D/g, ""); // sirf numbers
+                    if (value.length <= 10) {
+                      setFormData({ ...formData, phone: value });
+                    }
+                  }}
+                  required
                   className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition"
                 />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-medium text-slate-300">
-                  Message (Optional)
+                  Service
                 </label>
-                <textarea
+                <select
                   rows="3"
                   placeholder="Tell us about your current RCM challenges..."
-                  name="message"
+                  name="service"
+                  value={formData.service}
                   onChange={handleChange}
                   className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition resize-none"
-                ></textarea>
+                >
+                  <option value="">Services</option>
+                  <option value="Medical Billing Services">
+                    Medical Billing Services
+                  </option>
+                  <option value="Medical Empanelment Services">
+                    Medical Empanelment Services
+                  </option>
+                  <option value="Insurance Verification Services">
+                    Insurance Verification Services
+                  </option>
+                  <option value="Revenue Cycle Management Services">
+                    Revenue Cycle Management Services
+                  </option>
+                  <option value="Medical Billing & Codding Services">
+                    Medical Billing & Codding Services
+                  </option>
+                  <option value="Healthcare Claims Adjudication">
+                    Healthcare Claims Adjudication
+                  </option>
+                  <option value="Insurance Eligibility Services">
+                    Insurance Eligibility Services
+                  </option>
+                  <option value="Medical Transcription Services">
+                    Medical Transcription Services
+                  </option>
+                </select>
               </div>
               <button
-                type="button"
-                onClick={handleSubmit}
+                type="submit"
+                // onClick={handleSubmit}
                 className="w-full bg-blue-600 text-white font-semibold py-4 rounded-lg hover:bg-blue-700 transition flex justify-center items-center gap-2"
               >
                 Request a Demo <ArrowRight className="w-5 h-5" />

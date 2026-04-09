@@ -155,6 +155,7 @@ import Hero from "./Component/Hero/Hero";
 import Programs from "./Component/Programs/Programs";
 import Programm from "./Component/Programm/Programm";
 import Footer from "./Component/Footer/Footer";
+import Services from "./Component/Services/Services";
 // import Copyright from "./Component/Copyright";
 import Consultation from "./Component/Consultation/Consultation";
 import Testimonialsection from "./Component/TestimonialSection/Testimonialsection";
@@ -197,6 +198,7 @@ function App() {
             </>
           }
         />
+        <Route path="/services" element={<Services />} />
 
         {/* 🏥 Services */}
         <Route path="/coding" element={<MedicalBillingCodding />} />

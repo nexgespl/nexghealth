@@ -203,219 +203,356 @@
 
 // export default HealthcareClaimAdj;
 
+// import React from "react";
+// import "./HealthcareClaimAdj.css";
+
+// const HealthcareClaimAdj = () => {
+//   return (
+//     <div className="claim-container">
+//       <h1 className="claim-title">
+//         Healthcare Claim Adjudication Services — Accurate, Fair, Timely
+//       </h1>
+
+//       <section className="claim-section">
+//         <h2 className="section-heading">
+//           What Is Claim Adjudication in Healthcare
+//         </h2>
+//         <p className="section-text">
+//           Claims Adjudication (also “claim adjudication”) is the process by
+//           which a health insurance payer reviews a medical claim submitted by a
+//           provider and determines whether — and how much — to pay for the
+//           services rendered. It involves verifying that the claim is accurate,
+//           complete, compliant with policy terms and coding guidelines, and that
+//           the services provided were medically necessary.
+//         </p>
+//         <p className="section-text">
+//           During this process the claim may be fully approved, partially
+//           approved (reduced payment), or denied/rejected.
+//         </p>
+//         <p className="section-text">
+//           Claim adjudication is critical — it is at the core of the payment
+//           cycle, affecting when and how providers get reimbursed, and ensuring
+//           insurance plans remain stable and properly managed.
+//         </p>
+//       </section>
+
+//       <section className="claim-section">
+//         <h2 className="section-heading">
+//           Why Effective Claim Adjudication Matters
+//         </h2>
+//         <ul className="section-list">
+//           <li>
+//             Ensures Valid, Compliant Billing — Verifies codes, patient data,
+//             service dates, provider credentials, and coverage eligibility.
+//           </li>
+//           <li>
+//             Protects Against Overpayment & Fraud — Prevents improper or
+//             fraudulent payments through thorough review.
+//           </li>
+//           <li>
+//             Promotes Fairness & Transparency — Consistent, timely adjudication
+//             benefits patients, providers, and payers.
+//           </li>
+//           <li>
+//             Speeds Up Payment Cycle & Reduces Administrative Burden — Faster
+//             reimbursements and reduced rework or resubmissions.
+//           </li>
+//         </ul>
+//       </section>
+
+//       <section className="claim-section">
+//         <h2 className="section-heading">
+//           🛠️ Our Claim Adjudication Service — What We Do
+//         </h2>
+//         <ul className="section-list">
+//           <li>
+//             Confirm patient insurance status, coverage limits, benefits,
+//             pre-authorization requirements, and policy compliance before
+//             adjudication begins.
+//           </li>
+//           <li>
+//             Claim Validation & Coding Review — Check all patient details, coding
+//             (ICD, CPT/HCPCS), documentation, and service data for accuracy and
+//             compliance.
+//           </li>
+//           <li>
+//             Automated & Manual Adjudication Handling — Support both
+//             auto-adjudication and manual review for complex or high-value
+//             claims.
+//           </li>
+//           <li>
+//             Medical-Necessity & Compliance Checks — Validate services meet
+//             medical necessity criteria, check for duplicates, and enforce
+//             coding/coverage rules.
+//           </li>
+//           <li>
+//             Payment Determination & EOB Generation — Calculate approved amounts,
+//             co-pays, patient liability, and generate EOBs.
+//           </li>
+//           <li>
+//             Denial & Exception Management — Analyze denied or partially paid
+//             claims, support appeals, corrections, and resubmissions.
+//           </li>
+//           <li>
+//             Reporting, Audit Trail & Data Integrity — Maintain logs of
+//             adjudication decisions and validations for audit and transparency.
+//           </li>
+//           <li>
+//             Scalability and Efficiency Optimization — Efficient handling of high
+//             volumes for large payers, TPAs, or provider networks.
+//           </li>
+//         </ul>
+//       </section>
+
+//       <section className="claim-section">
+//         <h2 className="section-heading">
+//           How Claim Adjudication Works — Typical Workflow
+//         </h2>
+//         <ul className="section-list">
+//           <li>
+//             Claim Submission — Provider submits claim with service details,
+//             patient info, and codes.
+//           </li>
+//           <li>
+//             Pre-Adjudication Review / Eligibility Verification — Check patient
+//             insurance, plan coverage, prior authorizations, or referrals.
+//           </li>
+//           <li>
+//             Claim Validation & Automated Review — Validate codes, documentation,
+//             compliance, and check duplicates.
+//           </li>
+//           <li>
+//             Manual Review (if needed) — Human review for complex or flagged
+//             claims.
+//           </li>
+//           <li>
+//             Reimbursement Decision — Claim approved, partially approved, or
+//             denied based on coverage rules.
+//           </li>
+//           <li>
+//             Explanation & Payment / EOB Generation — Provide EOB summarizing
+//             payments and patient responsibilities.
+//           </li>
+//           <li>
+//             Post-Adjudication Activities — Denial analysis, appeals,
+//             resubmission, or payment posting.
+//           </li>
+//         </ul>
+//       </section>
+
+//       <section className="claim-section">
+//         <h2 className="section-heading">
+//           Who Benefits from Our Adjudication Services
+//         </h2>
+//         <ul className="section-list">
+//           <li>
+//             Health Insurance Companies & Payers — Reduce workload, ensure
+//             consistency, reduce fraud risk.
+//           </li>
+//           <li>
+//             Third-Party Administrators (TPAs) — Streamline claim review and
+//             payment management.
+//           </li>
+//           <li>
+//             Large Provider Networks & Hospital Systems — Quicker claim
+//             processing, fewer denials, improved cash flow.
+//           </li>
+//           <li>
+//             Specialty Clinics & Diagnostic Centers — Easier management of high
+//             volumes of claims.
+//           </li>
+//           <li>
+//             Employers / Self-Insured Groups — Better claims processing,
+//             transparency, simplified benefit administration.
+//           </li>
+//         </ul>
+//       </section>
+
+//       <section className="claim-section">
+//         <h2 className="section-heading">
+//           Why Choose Us for Claim Adjudication
+//         </h2>
+//         <ul className="section-list">
+//           <li>
+//             Expertise & Compliance — Knowledge of payer rules, coding standards,
+//             medical-necessity, and regulations.
+//           </li>
+//           <li>
+//             Hybrid Adjudication Approach — Automated for routine claims, manual
+//             for complex or high-value cases.
+//           </li>
+//           <li>
+//             Advanced Systems & Data Integrity — Secure systems with audit
+//             trails, error-checking, and fraud-prevention.
+//           </li>
+//           <li>
+//             Scalability & Efficiency — Handle high volumes with fast turnaround,
+//             reduced backlog, fewer denials.
+//           </li>
+//           <li>
+//             Transparency & Reporting — Dashboards, denial analytics, compliance
+//             logs.
+//           </li>
+//           <li>
+//             Proactive Denial & Exception Management — Analyze root causes,
+//             assist with appeals, implement corrective measures.
+//           </li>
+//         </ul>
+//       </section>
+
+//       <section className="claim-section">
+//         <h2 className="section-heading">
+//           Get Started — Seamless Claim Adjudication for Your Organization
+//         </h2>
+//         <p className="section-text">
+//           Let us streamline and optimize your claims adjudication process —
+//           reduce errors, speed up reimbursement, and ensure compliance.
+//         </p>
+//         <p className="section-text">
+//           Contact us for a free consultation and claim-adjudication audit. We’ll
+//           review your current process, identify gaps or inefficiencies, and
+//           propose a tailored adjudication solution.
+//         </p>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default HealthcareClaimAdj;
+
 import React from "react";
-import "./HealthcareClaimAdj.css";
 
 const HealthcareClaimAdj = () => {
   return (
-    <div className="claim-container">
-      <h1 className="claim-title">
-        Healthcare Claim Adjudication Services — Accurate, Fair, Timely
-      </h1>
+    <div className="bg-gradient-to-br from-blue-50 to-white py-14 px-4 md:px-8">
+      <div className="max-w-5xl mx-auto bg-white p-6 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+        {/* Title */}
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 border-l-4 border-blue-600 pl-4">
+          Healthcare Claim Adjudication Services — Accurate, Fair, Timely
+        </h1>
 
-      <section className="claim-section">
-        <h2 className="section-heading">
-          What Is Claim Adjudication in Healthcare
-        </h2>
-        <p className="section-text">
-          Claims Adjudication (also “claim adjudication”) is the process by
-          which a health insurance payer reviews a medical claim submitted by a
-          provider and determines whether — and how much — to pay for the
-          services rendered. It involves verifying that the claim is accurate,
-          complete, compliant with policy terms and coding guidelines, and that
-          the services provided were medically necessary.
-        </p>
-        <p className="section-text">
-          During this process the claim may be fully approved, partially
-          approved (reduced payment), or denied/rejected.
-        </p>
-        <p className="section-text">
-          Claim adjudication is critical — it is at the core of the payment
-          cycle, affecting when and how providers get reimbursed, and ensuring
-          insurance plans remain stable and properly managed.
-        </p>
-      </section>
+        {/* Section */}
+        <Section
+          title="What Is Claim Adjudication in Healthcare"
+          content={[
+            "Claims Adjudication is the process where a health insurance payer reviews a medical claim and determines payment.",
+            "Claims may be approved, partially approved, or denied based on accuracy, compliance, and medical necessity.",
+            "It plays a critical role in ensuring timely reimbursement and maintaining financial stability.",
+          ]}
+        />
 
-      <section className="claim-section">
-        <h2 className="section-heading">
-          Why Effective Claim Adjudication Matters
-        </h2>
-        <ul className="section-list">
-          <li>
-            Ensures Valid, Compliant Billing — Verifies codes, patient data,
-            service dates, provider credentials, and coverage eligibility.
-          </li>
-          <li>
-            Protects Against Overpayment & Fraud — Prevents improper or
-            fraudulent payments through thorough review.
-          </li>
-          <li>
-            Promotes Fairness & Transparency — Consistent, timely adjudication
-            benefits patients, providers, and payers.
-          </li>
-          <li>
-            Speeds Up Payment Cycle & Reduces Administrative Burden — Faster
-            reimbursements and reduced rework or resubmissions.
-          </li>
-        </ul>
-      </section>
+        {/* Importance */}
+        <Section
+          title="Why Effective Claim Adjudication Matters"
+          list={[
+            "Ensures valid, compliant billing",
+            "Protects against fraud and overpayment",
+            "Promotes fairness and transparency",
+            "Speeds up payment cycle",
+          ]}
+        />
 
-      <section className="claim-section">
-        <h2 className="section-heading">
-          🛠️ Our Claim Adjudication Service — What We Do
-        </h2>
-        <ul className="section-list">
-          <li>
-            Confirm patient insurance status, coverage limits, benefits,
-            pre-authorization requirements, and policy compliance before
-            adjudication begins.
-          </li>
-          <li>
-            Claim Validation & Coding Review — Check all patient details, coding
-            (ICD, CPT/HCPCS), documentation, and service data for accuracy and
-            compliance.
-          </li>
-          <li>
-            Automated & Manual Adjudication Handling — Support both
-            auto-adjudication and manual review for complex or high-value
-            claims.
-          </li>
-          <li>
-            Medical-Necessity & Compliance Checks — Validate services meet
-            medical necessity criteria, check for duplicates, and enforce
-            coding/coverage rules.
-          </li>
-          <li>
-            Payment Determination & EOB Generation — Calculate approved amounts,
-            co-pays, patient liability, and generate EOBs.
-          </li>
-          <li>
-            Denial & Exception Management — Analyze denied or partially paid
-            claims, support appeals, corrections, and resubmissions.
-          </li>
-          <li>
-            Reporting, Audit Trail & Data Integrity — Maintain logs of
-            adjudication decisions and validations for audit and transparency.
-          </li>
-          <li>
-            Scalability and Efficiency Optimization — Efficient handling of high
-            volumes for large payers, TPAs, or provider networks.
-          </li>
-        </ul>
-      </section>
+        {/* Services */}
+        <Section
+          title="Our Claim Adjudication Service — What We Do"
+          list={[
+            "Insurance verification and coverage checks",
+            "Claim validation & coding review",
+            "Automated & manual adjudication",
+            "Medical necessity checks",
+            "Payment calculation & EOB generation",
+            "Denial & exception management",
+            "Audit logs & reporting",
+            "Scalable high-volume processing",
+          ]}
+        />
 
-      <section className="claim-section">
-        <h2 className="section-heading">
-          How Claim Adjudication Works — Typical Workflow
-        </h2>
-        <ul className="section-list">
-          <li>
-            Claim Submission — Provider submits claim with service details,
-            patient info, and codes.
-          </li>
-          <li>
-            Pre-Adjudication Review / Eligibility Verification — Check patient
-            insurance, plan coverage, prior authorizations, or referrals.
-          </li>
-          <li>
-            Claim Validation & Automated Review — Validate codes, documentation,
-            compliance, and check duplicates.
-          </li>
-          <li>
-            Manual Review (if needed) — Human review for complex or flagged
-            claims.
-          </li>
-          <li>
-            Reimbursement Decision — Claim approved, partially approved, or
-            denied based on coverage rules.
-          </li>
-          <li>
-            Explanation & Payment / EOB Generation — Provide EOB summarizing
-            payments and patient responsibilities.
-          </li>
-          <li>
-            Post-Adjudication Activities — Denial analysis, appeals,
-            resubmission, or payment posting.
-          </li>
-        </ul>
-      </section>
+        {/* Workflow */}
+        <Section
+          title="How Claim Adjudication Works — Workflow"
+          list={[
+            "Claim submission",
+            "Eligibility verification",
+            "Validation & automated review",
+            "Manual review (if required)",
+            "Reimbursement decision",
+            "EOB generation",
+            "Post-adjudication follow-ups",
+          ]}
+        />
 
-      <section className="claim-section">
-        <h2 className="section-heading">
-          Who Benefits from Our Adjudication Services
-        </h2>
-        <ul className="section-list">
-          <li>
-            Health Insurance Companies & Payers — Reduce workload, ensure
-            consistency, reduce fraud risk.
-          </li>
-          <li>
-            Third-Party Administrators (TPAs) — Streamline claim review and
-            payment management.
-          </li>
-          <li>
-            Large Provider Networks & Hospital Systems — Quicker claim
-            processing, fewer denials, improved cash flow.
-          </li>
-          <li>
-            Specialty Clinics & Diagnostic Centers — Easier management of high
-            volumes of claims.
-          </li>
-          <li>
-            Employers / Self-Insured Groups — Better claims processing,
-            transparency, simplified benefit administration.
-          </li>
-        </ul>
-      </section>
+        {/* Beneficiaries */}
+        <Section
+          title="Who Benefits from Our Services"
+          list={[
+            "Insurance companies & payers",
+            "Third-party administrators (TPAs)",
+            "Hospitals & provider networks",
+            "Clinics & diagnostic centers",
+            "Self-insured organizations",
+          ]}
+        />
 
-      <section className="claim-section">
-        <h2 className="section-heading">
-          Why Choose Us for Claim Adjudication
-        </h2>
-        <ul className="section-list">
-          <li>
-            Expertise & Compliance — Knowledge of payer rules, coding standards,
-            medical-necessity, and regulations.
-          </li>
-          <li>
-            Hybrid Adjudication Approach — Automated for routine claims, manual
-            for complex or high-value cases.
-          </li>
-          <li>
-            Advanced Systems & Data Integrity — Secure systems with audit
-            trails, error-checking, and fraud-prevention.
-          </li>
-          <li>
-            Scalability & Efficiency — Handle high volumes with fast turnaround,
-            reduced backlog, fewer denials.
-          </li>
-          <li>
-            Transparency & Reporting — Dashboards, denial analytics, compliance
-            logs.
-          </li>
-          <li>
-            Proactive Denial & Exception Management — Analyze root causes,
-            assist with appeals, implement corrective measures.
-          </li>
-        </ul>
-      </section>
+        {/* Why Choose */}
+        <Section
+          title="Why Choose Us"
+          list={[
+            "Expertise in coding & compliance",
+            "Hybrid automation + manual approach",
+            "Secure systems & audit trails",
+            "High scalability & efficiency",
+            "Transparent reporting",
+            "Proactive denial management",
+          ]}
+        />
 
-      <section className="claim-section">
-        <h2 className="section-heading">
-          Get Started — Seamless Claim Adjudication for Your Organization
-        </h2>
-        <p className="section-text">
-          Let us streamline and optimize your claims adjudication process —
-          reduce errors, speed up reimbursement, and ensure compliance.
-        </p>
-        <p className="section-text">
-          Contact us for a free consultation and claim-adjudication audit. We’ll
-          review your current process, identify gaps or inefficiencies, and
-          propose a tailored adjudication solution.
-        </p>
-      </section>
+        {/* CTA */}
+        <div className="mt-12 bg-blue-600 text-white p-6 rounded-2xl text-center shadow-lg">
+          <h2 className="text-2xl font-bold mb-2">
+            Get Started with Seamless Adjudication
+          </h2>
+          <p className="mb-4">
+            Optimize your claim processing, reduce errors, and improve
+            reimbursement speed.
+          </p>
+          <button className="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">
+            Book Free Consultation
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default HealthcareClaimAdj;
+
+/* 🔥 Reusable Section Component */
+const Section = ({ title, content, list }) => {
+  return (
+    <div className="mt-10">
+      <h2 className="text-xl md:text-2xl font-semibold text-black-700 mb-4">
+        {title}
+      </h2>
+
+      {content &&
+        content.map((para, i) => (
+          <p key={i} className="text-gray-600 mb-2 leading-relaxed">
+            {para}
+          </p>
+        ))}
+
+      {list && (
+        <ul className="space-y-3">
+          {list.map((item, i) => (
+            <li
+              key={i}
+              className="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3 text-gray-700 shadow-sm hover:shadow-md transition"
+            >
+              ✔ {item}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
