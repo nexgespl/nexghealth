@@ -313,109 +313,243 @@
 //   );
 // }
 
+// import React from "react";
+// import "./InsuranceElig.css";
+
+// const InsuranceElig = () => {
+//   return (
+//     <div className="eligibility-container">
+//       <h1 className="eligibility-title">
+//         Insurance Eligibility Services — Verify, Protect & Optimize Revenue from
+//         Day One
+//       </h1>
+
+//       <section className="eligibility-section">
+//         <h2>What Is Insurance Eligibility Verification?</h2>
+//         <p>
+//           Insurance eligibility verification is the process of confirming a
+//           patient’s health-insurance coverage, benefits and policy status before
+//           services are provided — including whether the patient’s plan is
+//           active, what services are covered, and what out-of-pocket costs
+//           (deductibles, copays, coinsurance) or prerequisites (e.g.
+//           prior-authorization) apply.
+//         </p>
+//         <p>
+//           This upfront check helps ensure that both provider and patient have
+//           clarity about coverage — which is critical for accurate billing,
+//           claims submission, and minimizing denials or surprise bills.
+//         </p>
+//       </section>
+
+//       <section className="eligibility-section">
+//         <h2>Why Insurance Eligibility Services Matter</h2>
+//         <ul>
+//           <li>Reduce Claim Denials & Submission Errors</li>
+//           <li>Improve Revenue Cycle & Cash Flow</li>
+//           <li>Enhance Patient Experience & Transparency</li>
+//           <li>Reduce Administrative Burden</li>
+//           <li>Compliance & Accuracy</li>
+//         </ul>
+//       </section>
+
+//       <section className="eligibility-section">
+//         <h2>What Our Insurance Eligibility Services Include</h2>
+//         <ul>
+//           <li>Real-time insurance coverage checks (active/inactive status)</li>
+//           <li>
+//             Verification of plan benefits, limits, exclusions, coverage duration
+//           </li>
+//           <li>Identification of out-of-pocket cost obligations</li>
+//           <li>Checking for prior-authorization or referral requirements</li>
+//           <li>Verification of network status (in-network vs out-of-network)</li>
+//           <li>Documentation and audit-ready record-keeping</li>
+//         </ul>
+//       </section>
+
+//       <section className="eligibility-section">
+//         <h2>How Our Service Works — Step by Step</h2>
+//         <ul>
+//           <li>Patient Intake & Info Collection</li>
+//           <li>
+//             Real-Time Eligibility Check (or Batch / Pre-visit Verification)
+//           </li>
+//           <li>Benefit & Cost Assessment</li>
+//           <li>Authorization & Referral Verification (if needed)</li>
+//           <li>Patient Communication & Financial Transparency</li>
+//           <li>Documentation & Audit Trail</li>
+//           <li>Pre-Claim Submission Checkpoint</li>
+//         </ul>
+//       </section>
+
+//       <section className="eligibility-section">
+//         <h2>Who Benefits from Our Insurance Eligibility Services</h2>
+//         <ul>
+//           <li>Physician practices (single- or multi-specialty)</li>
+//           <li>Ambulatory care centers, outpatient clinics</li>
+//           <li>Surgical centers and ambulatory surgery centers (ASCs)</li>
+//           <li>Specialty clinics (therapy, dental, behavioral health, etc.)</li>
+//           <li>Hospitals and larger health-system networks</li>
+//         </ul>
+//       </section>
+
+//       <section className="eligibility-section">
+//         <h2>Why Choose Us as Your Insurance Eligibility Partner</h2>
+//         <ul>
+//           <li>Expertise and Reliability</li>
+//           <li>Speed — Real-Time or Scheduled Checks</li>
+//           <li>Comprehensive Coverage — Benefits, Costs, Authorizations</li>
+//           <li>Transparent Communication with Patients</li>
+//           <li>Reduced Administrative Load</li>
+//           <li>Improved Revenue Cycle and Cash Flow</li>
+//         </ul>
+//       </section>
+
+//       <section className="eligibility-section">
+//         <h2>Ready to Secure Coverage and Protect Your Revenue Cycle?</h2>
+//         <p>
+//           Don’t risk claim denials or surprise billing. Contact us today to set
+//           up insurance eligibility verification for your practice — and start
+//           every patient encounter with confidence. We’ll review your needs,
+//           integrate with your workflows, and help you deliver care with
+//           financial certainty.
+//         </p>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default InsuranceElig;
+
 import React from "react";
-import "./InsuranceElig.css";
 
 const InsuranceElig = () => {
   return (
-    <div className="eligibility-container">
-      <h1 className="eligibility-title">
-        Insurance Eligibility Services — Verify, Protect & Optimize Revenue from
-        Day One
-      </h1>
+    <div className="bg-gradient-to-br from-blue-50 to-white py-14 px-4 md:px-8">
+      <div className="max-w-5xl mx-auto bg-white p-6 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+        {/* Title */}
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 border-l-4 border-blue-600 pl-4">
+          Insurance Eligibility Services — Verify, Protect & Optimize Revenue
+        </h1>
 
-      <section className="eligibility-section">
-        <h2>What Is Insurance Eligibility Verification?</h2>
-        <p>
-          Insurance eligibility verification is the process of confirming a
-          patient’s health-insurance coverage, benefits and policy status before
-          services are provided — including whether the patient’s plan is
-          active, what services are covered, and what out-of-pocket costs
-          (deductibles, copays, coinsurance) or prerequisites (e.g.
-          prior-authorization) apply.
-        </p>
-        <p>
-          This upfront check helps ensure that both provider and patient have
-          clarity about coverage — which is critical for accurate billing,
-          claims submission, and minimizing denials or surprise bills.
-        </p>
-      </section>
+        {/* Section */}
+        <Section
+          title="What Is Insurance Eligibility Verification?"
+          content={[
+            "Insurance eligibility verification confirms a patient’s coverage, benefits, and policy status before services are provided.",
+            "It ensures clarity about coverage, out-of-pocket costs, and requirements like prior authorization.",
+          ]}
+        />
 
-      <section className="eligibility-section">
-        <h2>Why Insurance Eligibility Services Matter</h2>
-        <ul>
-          <li>Reduce Claim Denials & Submission Errors</li>
-          <li>Improve Revenue Cycle & Cash Flow</li>
-          <li>Enhance Patient Experience & Transparency</li>
-          <li>Reduce Administrative Burden</li>
-          <li>Compliance & Accuracy</li>
-        </ul>
-      </section>
+        {/* Importance */}
+        <Section
+          title="Why Insurance Eligibility Services Matter"
+          list={[
+            "Reduce claim denials & errors",
+            "Improve revenue cycle & cash flow",
+            "Enhance patient transparency",
+            "Reduce administrative burden",
+            "Ensure compliance & accuracy",
+          ]}
+        />
 
-      <section className="eligibility-section">
-        <h2>What Our Insurance Eligibility Services Include</h2>
-        <ul>
-          <li>Real-time insurance coverage checks (active/inactive status)</li>
-          <li>
-            Verification of plan benefits, limits, exclusions, coverage duration
-          </li>
-          <li>Identification of out-of-pocket cost obligations</li>
-          <li>Checking for prior-authorization or referral requirements</li>
-          <li>Verification of network status (in-network vs out-of-network)</li>
-          <li>Documentation and audit-ready record-keeping</li>
-        </ul>
-      </section>
+        {/* Services */}
+        <Section
+          title="What Our Services Include"
+          list={[
+            "Real-time coverage verification",
+            "Plan benefits & exclusions check",
+            "Out-of-pocket cost estimation",
+            "Authorization & referral checks",
+            "Network status verification",
+            "Audit-ready documentation",
+          ]}
+        />
 
-      <section className="eligibility-section">
-        <h2>How Our Service Works — Step by Step</h2>
-        <ul>
-          <li>Patient Intake & Info Collection</li>
-          <li>
-            Real-Time Eligibility Check (or Batch / Pre-visit Verification)
-          </li>
-          <li>Benefit & Cost Assessment</li>
-          <li>Authorization & Referral Verification (if needed)</li>
-          <li>Patient Communication & Financial Transparency</li>
-          <li>Documentation & Audit Trail</li>
-          <li>Pre-Claim Submission Checkpoint</li>
-        </ul>
-      </section>
+        {/* Process */}
+        <Section
+          title="How Our Service Works — Step by Step"
+          list={[
+            "Patient intake & data collection",
+            "Real-time eligibility check",
+            "Benefit & cost assessment",
+            "Authorization verification",
+            "Patient communication",
+            "Documentation & audit trail",
+            "Pre-claim validation",
+          ]}
+        />
 
-      <section className="eligibility-section">
-        <h2>Who Benefits from Our Insurance Eligibility Services</h2>
-        <ul>
-          <li>Physician practices (single- or multi-specialty)</li>
-          <li>Ambulatory care centers, outpatient clinics</li>
-          <li>Surgical centers and ambulatory surgery centers (ASCs)</li>
-          <li>Specialty clinics (therapy, dental, behavioral health, etc.)</li>
-          <li>Hospitals and larger health-system networks</li>
-        </ul>
-      </section>
+        {/* Beneficiaries */}
+        <Section
+          title="Who Benefits from Our Services"
+          list={[
+            "Physician practices",
+            "Outpatient clinics & care centers",
+            "Surgical centers (ASCs)",
+            "Specialty clinics",
+            "Hospitals & health systems",
+          ]}
+        />
 
-      <section className="eligibility-section">
-        <h2>Why Choose Us as Your Insurance Eligibility Partner</h2>
-        <ul>
-          <li>Expertise and Reliability</li>
-          <li>Speed — Real-Time or Scheduled Checks</li>
-          <li>Comprehensive Coverage — Benefits, Costs, Authorizations</li>
-          <li>Transparent Communication with Patients</li>
-          <li>Reduced Administrative Load</li>
-          <li>Improved Revenue Cycle and Cash Flow</li>
-        </ul>
-      </section>
+        {/* Why Choose */}
+        <Section
+          title="Why Choose Us"
+          list={[
+            "Expert and reliable team",
+            "Fast real-time verification",
+            "Comprehensive coverage checks",
+            "Transparent patient communication",
+            "Reduced admin workload",
+            "Improved revenue cycle",
+          ]}
+        />
 
-      <section className="eligibility-section">
-        <h2>Ready to Secure Coverage and Protect Your Revenue Cycle?</h2>
-        <p>
-          Don’t risk claim denials or surprise billing. Contact us today to set
-          up insurance eligibility verification for your practice — and start
-          every patient encounter with confidence. We’ll review your needs,
-          integrate with your workflows, and help you deliver care with
-          financial certainty.
-        </p>
-      </section>
+        {/* CTA */}
+        <div className="mt-12 bg-blue-600 text-white p-6 rounded-2xl text-center shadow-lg">
+          <h2 className="text-2xl font-bold mb-2">
+            Ready to Protect Your Revenue Cycle?
+          </h2>
+          <p className="mb-4">
+            Start every patient interaction with confidence and clarity.
+          </p>
+          <button className="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">
+            Get Started Now
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default InsuranceElig;
+
+/* 🔥 Reusable Section Component */
+const Section = ({ title, content, list }) => {
+  return (
+    <div className="mt-10">
+      <h2 className="text-xl md:text-2xl font-semibold text-black-700 mb-4">
+        {title}
+      </h2>
+
+      {content &&
+        content.map((para, i) => (
+          <p key={i} className="text-gray-600 mb-2 leading-relaxed">
+            {para}
+          </p>
+        ))}
+
+      {list && (
+        <ul className="space-y-3">
+          {list.map((item, i) => (
+            <li
+              key={i}
+              className="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3 text-gray-700 shadow-sm hover:shadow-md transition"
+            >
+              ✔ {item}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};

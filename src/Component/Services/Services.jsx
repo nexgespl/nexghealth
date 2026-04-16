@@ -199,10 +199,12 @@ const Services = () => {
       {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-          Our Services
+          {/* Our Services */}
+          NexGHealth
         </h1>
         <p className="text-gray-500 mt-3">
-          Empowering Healthcare with Accuracy, Efficiency & Excellence.
+          {/* Empowering Healthcare with Accuracy, Efficiency & Excellence. */}
+          Grow Your Practice with Smart Healthcare Automation
         </p>
       </div>
 

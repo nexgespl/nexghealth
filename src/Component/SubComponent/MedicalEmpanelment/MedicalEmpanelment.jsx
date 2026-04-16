@@ -194,228 +194,369 @@
 
 // export default MedicalEmpanelment;
 
+// import React from "react";
+// import "./MedicalEmpanelment.css";
+
+// const MedicalEmpanelment = () => {
+//   return (
+//     <div className="empanel-wrapper">
+//       <h1 className="empanel-heading">
+//         Medical Empanelment Services — Connect Patients, Providers & Payers
+//         Efficiently
+//       </h1>
+
+//       <h2 className="empanel-subheading">What Is Medical Empanelment?</h2>
+//       <p>
+//         Medical empanelment refers to the process by which a healthcare provider
+//         (hospital, clinic, diagnostic center, etc.) becomes formally recognized
+//         and approved by one or more health insurers, Third-Party Administrators
+//         (TPAs), or insurance networks — thereby becoming an “empanelled
+//         provider.” Once empanelled:
+//       </p>
+
+//       <p>
+//         The provider becomes eligible to offer services to the insurer’s
+//         members/beneficiaries under agreed contractual/insurance terms.
+//       </p>
+//       <p>
+//         Patients insured with that insurer can access care at the provider’s
+//         facility under cashless or in-network arrangements, reducing upfront
+//         cost burden.
+//       </p>
+//       <p>
+//         The insurer gains a vetted, qualified provider with agreed credentials,
+//         while the provider gains access to a broader patient base.
+//       </p>
+
+//       <p>
+//         In short — empanelment enables trust, compliance, and seamless
+//         coordination between providers, insurers, and patients.
+//       </p>
+
+//       <h2 className="empanel-subheading">
+//         Why Empanelment Matters (For Providers & Patients)
+//       </h2>
+
+//       <p>
+//         <strong>Access & Cashless Treatment for Patients</strong> — When a
+//         provider is empanelled, insured patients can receive cashless or
+//         in-network treatment, making care more accessible and affordable.
+//       </p>
+
+//       <p>
+//         <strong>Wider Patient Reach for Providers</strong> — Empanelment allows
+//         providers to serve members of insurers/payers, increasing patient volume
+//         and market reach.
+//       </p>
+
+//       <p>
+//         <strong>Network-Level Trust & Standards</strong> — Insurance networks
+//         typically require providers meet certain quality, credentialing,
+//         regulatory and infrastructural standards — ensuring care quality and
+//         compliance.
+//       </p>
+
+//       <p>
+//         <strong>Better Coordination & Continuity of Care</strong> — Through
+//         empanelment, patients get a stable network of care providers tied to
+//         their insurance — improving consistency and ease of access.
+//       </p>
+
+//       <p>
+//         <strong>Reduced Administrative Burden for Patients & Providers</strong>{" "}
+//         — With pre-approved facilities, claims, cashless or in-network
+//         processing becomes simpler and faster.
+//       </p>
+
+//       <h2 className="empanel-subheading">
+//         What Our Medical Empanelment Services Cover
+//       </h2>
+
+//       <ul>
+//         <li>
+//           <strong>Insurance Network Enrollment / TPA Liaison</strong> — We
+//           manage applications to insurers and TPAs, ensuring all credentialing,
+//           documentation, and compliance requirements are met.
+//         </li>
+
+//         <li>
+//           <strong>Document & Credential Verification</strong> — We verify
+//           provider credentials, licenses, facility qualifications, and all
+//           insurer-specific prerequisites needed for empanelment.
+//         </li>
+
+//         <li>
+//           <strong>Contract Negotiation & Compliance</strong> — We negotiate
+//           terms and rates with payers/insurers, ensuring favorable conditions
+//           and regulatory compliance.
+//         </li>
+
+//         <li>
+//           <strong>Onboarding & System Integration Support</strong> — We help
+//           integrate your facility into the insurer’s network systems — enabling
+//           cashless billing, claims submission, and patient management.
+//         </li>
+
+//         <li>
+//           <strong>Network Maintenance & Re-certification Handling</strong> —
+//           Maintain empanelment status over time — including renewals, updates,
+//           audits, and compliance documentation.
+//         </li>
+
+//         <li>
+//           <strong>Provider-Patient Linkage & Benefits Support</strong> — Once
+//           empanelled, we assist in patient attribution, helping insured
+//           individuals to find and access your services under the insurer’s
+//           coverage.
+//         </li>
+
+//         <li>
+//           <strong>Advisory & Consulting</strong> — Guidance on optimizing
+//           service offerings, aligning with insurer requirements, expanding
+//           empanelment across multiple payers/TPAs, and maximizing benefits.
+//         </li>
+//       </ul>
+
+//       <h2 className="empanel-subheading">
+//         How Our Empanelment Service Works — Step by Step
+//       </h2>
+
+//       <p>
+//         <strong>Initial Consultation & Assessment</strong> — We begin by
+//         evaluating your facility, services, staff credentials, and
+//         insurance-network goals.
+//       </p>
+
+//       <p>
+//         <strong>Document Gathering & Credential Prep</strong> — We compile
+//         licenses, provider credentials, facility certifications, legal
+//         documents, and insurer-specific requirements.
+//       </p>
+
+//       <p>
+//         <strong>Application & Submission to Payers/TPAs</strong> — We submit
+//         empanelment applications to desired insurers or TPAs, handling all
+//         paperwork and compliance checks.
+//       </p>
+
+//       <p>
+//         <strong>Follow-Up, Audit & Approval Management</strong> — We coordinate
+//         with payers for audits, inspections or additional documentation — until
+//         empanelment is approved.
+//       </p>
+
+//       <p>
+//         <strong>Network Onboarding & System Integration</strong> — Once
+//         approved, we ensure your facility is listed in insurer networks,
+//         cashless billing is enabled (if applicable), and administrative systems
+//         are aligned.
+//       </p>
+
+//       <p>
+//         <strong>Ongoing Support & Panel Maintenance</strong> — We maintain your
+//         empanelment status: manage renewals, update credentials, handle
+//         re-certifications, and ensure compliance over time.
+//       </p>
+
+//       <h2 className="empanel-subheading">Why Choose Us for Empanelment?</h2>
+
+//       <p>
+//         <strong>Expertise in Multiple Insurance & TPA Networks</strong> — We
+//         have experience across diverse payer networks — public, private, and
+//         corporate.
+//       </p>
+
+//       <p>
+//         <strong>Full-Service Handling</strong> — From credentialing to contract
+//         negotiation, onboarding, and network maintenance — we handle it all.
+//       </p>
+
+//       <p>
+//         <strong>Compliance & Quality Assurance</strong> — We ensure all
+//         empanelment requirements are met, reducing risk of rejection or
+//         compliance issues.
+//       </p>
+
+//       <p>
+//         <strong>Faster Time to Empanelment</strong> — Our established processes
+//         and documentation readiness help accelerate approval time.
+//       </p>
+
+//       <p>
+//         <strong>Ongoing Support & Scalability</strong> — As you grow, add
+//         services, or target new insurance groups, we can help expand your
+//         empanelment footprint.
+//       </p>
+
+//       <p>
+//         <strong>Transparent Communication & Reporting</strong> — We keep you
+//         updated throughout, providing clear status, next steps, and
+//         requirements.
+//       </p>
+
+//       <h2 className="empanel-subheading">
+//         Who Can Benefit Most from Our Empanelment Services
+//       </h2>
+
+//       <ul>
+//         <li>Hospitals (private or public)</li>
+//         <li>Specialty clinics & diagnostic centers</li>
+//         <li>Multi-specialty outpatient centers</li>
+//         <li>Preventive care or wellness centers</li>
+//         <li>Small clinics seeking entry into payer networks</li>
+//       </ul>
+
+//       <h2 className="empanel-subheading">
+//         Get Started: Simplify Insurance & Expand Your Reach
+//       </h2>
+
+//       <p>
+//         Ready to become an empanelled provider and unlock access to a broader
+//         patient network?
+//       </p>
+//     </div>
+//   );
+// };
+
+// export default MedicalEmpanelment;
+
 import React from "react";
-import "./MedicalEmpanelment.css";
 
 const MedicalEmpanelment = () => {
   return (
-    <div className="empanel-wrapper">
-      <h1 className="empanel-heading">
-        Medical Empanelment Services — Connect Patients, Providers & Payers
-        Efficiently
-      </h1>
+    <div className="bg-gradient-to-br from-blue-50 to-white py-14 px-4 md:px-8">
+      <div className="max-w-5xl mx-auto bg-white p-6 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+        {/* Title */}
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 border-l-4 border-blue-600 pl-4">
+          Medical Empanelment Services — Connect Patients, Providers & Payers
+          Efficiently
+        </h1>
 
-      <h2 className="empanel-subheading">What Is Medical Empanelment?</h2>
-      <p>
-        Medical empanelment refers to the process by which a healthcare provider
-        (hospital, clinic, diagnostic center, etc.) becomes formally recognized
-        and approved by one or more health insurers, Third-Party Administrators
-        (TPAs), or insurance networks — thereby becoming an “empanelled
-        provider.” Once empanelled:
-      </p>
+        {/* Section */}
+        <Section title="What Is Medical Empanelment?">
+          <p>
+            Medical empanelment is the process where a healthcare provider
+            becomes officially recognized by insurers or TPAs as an approved
+            provider.
+          </p>
+          <p>
+            This allows providers to offer services to insured patients under
+            agreed terms, enabling cashless and in-network treatments.
+          </p>
+          <p>
+            It creates a trusted ecosystem between providers, insurers, and
+            patients.
+          </p>
+        </Section>
 
-      <p>
-        The provider becomes eligible to offer services to the insurer’s
-        members/beneficiaries under agreed contractual/insurance terms.
-      </p>
-      <p>
-        Patients insured with that insurer can access care at the provider’s
-        facility under cashless or in-network arrangements, reducing upfront
-        cost burden.
-      </p>
-      <p>
-        The insurer gains a vetted, qualified provider with agreed credentials,
-        while the provider gains access to a broader patient base.
-      </p>
+        {/* Importance */}
+        <Section title="Why Empanelment Matters">
+          <List
+            items={[
+              "Cashless treatment access for patients",
+              "Increased patient reach for providers",
+              "Ensures quality & compliance standards",
+              "Better care coordination",
+              "Reduced administrative burden",
+            ]}
+          />
+        </Section>
 
-      <p>
-        In short — empanelment enables trust, compliance, and seamless
-        coordination between providers, insurers, and patients.
-      </p>
+        {/* Services */}
+        <Section title="What Our Services Cover">
+          <List
+            items={[
+              "Insurance & TPA enrollment support",
+              "Document & credential verification",
+              "Contract negotiation & compliance",
+              "Onboarding & system integration",
+              "Network maintenance & re-certification",
+              "Provider-patient linkage support",
+              "Consulting & expansion strategy",
+            ]}
+          />
+        </Section>
 
-      <h2 className="empanel-subheading">
-        Why Empanelment Matters (For Providers & Patients)
-      </h2>
+        {/* Process */}
+        <Section title="How Our Service Works">
+          <List
+            items={[
+              "Initial consultation & assessment",
+              "Document preparation",
+              "Application submission",
+              "Follow-up & approval management",
+              "Network onboarding",
+              "Ongoing support & maintenance",
+            ]}
+          />
+        </Section>
 
-      <p>
-        <strong>Access & Cashless Treatment for Patients</strong> — When a
-        provider is empanelled, insured patients can receive cashless or
-        in-network treatment, making care more accessible and affordable.
-      </p>
+        {/* Why Choose */}
+        <Section title="Why Choose Us">
+          <List
+            items={[
+              "Multi-network expertise",
+              "End-to-end service handling",
+              "Strong compliance management",
+              "Faster approval timelines",
+              "Scalable support",
+              "Transparent communication",
+            ]}
+          />
+        </Section>
 
-      <p>
-        <strong>Wider Patient Reach for Providers</strong> — Empanelment allows
-        providers to serve members of insurers/payers, increasing patient volume
-        and market reach.
-      </p>
+        {/* Who Benefits */}
+        <Section title="Who Can Benefit">
+          <List
+            items={[
+              "Hospitals",
+              "Specialty clinics & diagnostic centers",
+              "Outpatient centers",
+              "Wellness centers",
+              "Small clinics entering insurance networks",
+            ]}
+          />
+        </Section>
 
-      <p>
-        <strong>Network-Level Trust & Standards</strong> — Insurance networks
-        typically require providers meet certain quality, credentialing,
-        regulatory and infrastructural standards — ensuring care quality and
-        compliance.
-      </p>
-
-      <p>
-        <strong>Better Coordination & Continuity of Care</strong> — Through
-        empanelment, patients get a stable network of care providers tied to
-        their insurance — improving consistency and ease of access.
-      </p>
-
-      <p>
-        <strong>Reduced Administrative Burden for Patients & Providers</strong>{" "}
-        — With pre-approved facilities, claims, cashless or in-network
-        processing becomes simpler and faster.
-      </p>
-
-      <h2 className="empanel-subheading">
-        What Our Medical Empanelment Services Cover
-      </h2>
-
-      <ul>
-        <li>
-          <strong>Insurance Network Enrollment / TPA Liaison</strong> — We
-          manage applications to insurers and TPAs, ensuring all credentialing,
-          documentation, and compliance requirements are met.
-        </li>
-
-        <li>
-          <strong>Document & Credential Verification</strong> — We verify
-          provider credentials, licenses, facility qualifications, and all
-          insurer-specific prerequisites needed for empanelment.
-        </li>
-
-        <li>
-          <strong>Contract Negotiation & Compliance</strong> — We negotiate
-          terms and rates with payers/insurers, ensuring favorable conditions
-          and regulatory compliance.
-        </li>
-
-        <li>
-          <strong>Onboarding & System Integration Support</strong> — We help
-          integrate your facility into the insurer’s network systems — enabling
-          cashless billing, claims submission, and patient management.
-        </li>
-
-        <li>
-          <strong>Network Maintenance & Re-certification Handling</strong> —
-          Maintain empanelment status over time — including renewals, updates,
-          audits, and compliance documentation.
-        </li>
-
-        <li>
-          <strong>Provider-Patient Linkage & Benefits Support</strong> — Once
-          empanelled, we assist in patient attribution, helping insured
-          individuals to find and access your services under the insurer’s
-          coverage.
-        </li>
-
-        <li>
-          <strong>Advisory & Consulting</strong> — Guidance on optimizing
-          service offerings, aligning with insurer requirements, expanding
-          empanelment across multiple payers/TPAs, and maximizing benefits.
-        </li>
-      </ul>
-
-      <h2 className="empanel-subheading">
-        How Our Empanelment Service Works — Step by Step
-      </h2>
-
-      <p>
-        <strong>Initial Consultation & Assessment</strong> — We begin by
-        evaluating your facility, services, staff credentials, and
-        insurance-network goals.
-      </p>
-
-      <p>
-        <strong>Document Gathering & Credential Prep</strong> — We compile
-        licenses, provider credentials, facility certifications, legal
-        documents, and insurer-specific requirements.
-      </p>
-
-      <p>
-        <strong>Application & Submission to Payers/TPAs</strong> — We submit
-        empanelment applications to desired insurers or TPAs, handling all
-        paperwork and compliance checks.
-      </p>
-
-      <p>
-        <strong>Follow-Up, Audit & Approval Management</strong> — We coordinate
-        with payers for audits, inspections or additional documentation — until
-        empanelment is approved.
-      </p>
-
-      <p>
-        <strong>Network Onboarding & System Integration</strong> — Once
-        approved, we ensure your facility is listed in insurer networks,
-        cashless billing is enabled (if applicable), and administrative systems
-        are aligned.
-      </p>
-
-      <p>
-        <strong>Ongoing Support & Panel Maintenance</strong> — We maintain your
-        empanelment status: manage renewals, update credentials, handle
-        re-certifications, and ensure compliance over time.
-      </p>
-
-      <h2 className="empanel-subheading">Why Choose Us for Empanelment?</h2>
-
-      <p>
-        <strong>Expertise in Multiple Insurance & TPA Networks</strong> — We
-        have experience across diverse payer networks — public, private, and
-        corporate.
-      </p>
-
-      <p>
-        <strong>Full-Service Handling</strong> — From credentialing to contract
-        negotiation, onboarding, and network maintenance — we handle it all.
-      </p>
-
-      <p>
-        <strong>Compliance & Quality Assurance</strong> — We ensure all
-        empanelment requirements are met, reducing risk of rejection or
-        compliance issues.
-      </p>
-
-      <p>
-        <strong>Faster Time to Empanelment</strong> — Our established processes
-        and documentation readiness help accelerate approval time.
-      </p>
-
-      <p>
-        <strong>Ongoing Support & Scalability</strong> — As you grow, add
-        services, or target new insurance groups, we can help expand your
-        empanelment footprint.
-      </p>
-
-      <p>
-        <strong>Transparent Communication & Reporting</strong> — We keep you
-        updated throughout, providing clear status, next steps, and
-        requirements.
-      </p>
-
-      <h2 className="empanel-subheading">
-        Who Can Benefit Most from Our Empanelment Services
-      </h2>
-
-      <ul>
-        <li>Hospitals (private or public)</li>
-        <li>Specialty clinics & diagnostic centers</li>
-        <li>Multi-specialty outpatient centers</li>
-        <li>Preventive care or wellness centers</li>
-        <li>Small clinics seeking entry into payer networks</li>
-      </ul>
-
-      <h2 className="empanel-subheading">
-        Get Started: Simplify Insurance & Expand Your Reach
-      </h2>
-
-      <p>
-        Ready to become an empanelled provider and unlock access to a broader
-        patient network?
-      </p>
+        {/* CTA */}
+        <div className="mt-12 bg-blue-600 text-white p-6 rounded-2xl text-center shadow-lg">
+          <h2 className="text-2xl font-bold mb-2">
+            Ready to Expand Your Network?
+          </h2>
+          <p className="mb-4">
+            Become an empanelled provider and unlock new patient opportunities.
+          </p>
+          <button className="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">
+            Get Started Now
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default MedicalEmpanelment;
+
+/* 🔥 Components */
+
+const Section = ({ title, children }) => (
+  <div className="mt-10">
+    <h2 className="text-xl md:text-2xl font-semibold text-black-700 mb-4">
+      {title}
+    </h2>
+    <div className="text-gray-600 space-y-3 leading-relaxed">{children}</div>
+  </div>
+);
+
+const List = ({ items }) => (
+  <ul className="mt-3 space-y-3">
+    {items.map((item, i) => (
+      <li
+        key={i}
+        className="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition"
+      >
+        ✔ {item}
+      </li>
+    ))}
+  </ul>
+);
